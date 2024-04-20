@@ -1,10 +1,8 @@
-import {StartingPage} from "@/components/StartingPage";
 
 export default function Home() {
     return (
         <>
-            <StartingPage>
-            </StartingPage>
+        <h1>Gå til enten /admin eller /user</h1>
         </>
 );
 }
