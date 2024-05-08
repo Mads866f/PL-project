@@ -10,7 +10,7 @@ const QuestionPage = ({ question }) => {
     text = "";
   }
     return (
-        <div className="flex flex-col h-screen">
+      <div className="flex flex-col h-screen">
       {/* Main Content */}
       <main className="flex-grow bg-gradient-to-b from-purple-500 to-indigo-600 flex items-center justify-center">
         <div className="bg-white rounded container mx-auto px-4 py-8">
