@@ -5,9 +5,7 @@ import questions from '../questions'
 export default function User() {
     return (
         <div>
-            {questions.map(question => (
-            <QuestionPage key={question.id} question={question} />
-        ))}
+            <h1>error</h1>
         </div>
       );
 };
