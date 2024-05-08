@@ -54,7 +54,7 @@ const Landingpage = () => {
         </form>
         <div className="text-center">
         <Link className="text-indigo-600 hover:text-indigo-500 font-medium"
-        href="/user">
+        href="/user/1">
             continue as guest
           </Link>
         </div>

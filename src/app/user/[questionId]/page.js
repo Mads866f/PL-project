@@ -7,7 +7,7 @@ export default function Question({ params }) {
     
     return (
         <div>
-            <QuestionPage key={index} question={currentPage} />
+            <QuestionPage key={index} question={currentPage} isTeacher={false}/>
         </div>
     );
 }

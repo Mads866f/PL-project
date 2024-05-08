@@ -1,5 +1,5 @@
 import QuestionPage from '../components/QuestionPage';
-
+import questions from '../questions'
 
 
 export default function User() {
@@ -11,11 +11,3 @@ export default function User() {
         </div>
       );
 };
-
-const questions = [
-    {
-        id: 1,
-        question: "question one",
-        answers: ["good", "test1", "bad"]
-    }
-];
