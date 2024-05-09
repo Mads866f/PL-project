@@ -1,6 +1,3 @@
-import QuestionPage from '../components/QuestionPage';
-import questions from '../questions'
-
 
 export default function User() {
     return (
