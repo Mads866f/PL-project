@@ -1,6 +1,6 @@
 import React from "react";
 import AdminHeader from "./Adminheader"
-import ClassColumn from "./classColumn";
+import ClassColumn from "./ClassColumn";
 
 const AdminDashboard = () => {
   return (
