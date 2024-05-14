@@ -1,12 +1,12 @@
 import React from "react";
 import AdminHeader from "./Adminheader"
-import Classselector from "./Classselector"
+import ClassColumn from "./classColumn";
 
 const AdminDashboard = () => {
   return (
     <div className="flex flex-wrap">
     <AdminHeader/>
-    <Classselector/>
+    <ClassColumn/>
   </div>
   );
 };

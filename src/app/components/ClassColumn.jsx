@@ -1,8 +1,9 @@
 import React from 'react';
+import Groups from './Groups';
 
-const Column = () => {
+const ClassColumn = () => {
   const title = "Klasser";
-  const entries = ["1.B", "3.A", "2.A"];
+  const entries = ["1.B", "3.A", "2.A","ph"];
 
   return (
     <div className="w-full md:w-1/5 p-4 border">
@@ -11,14 +12,11 @@ const Column = () => {
         <h2 className="text-lg font-semibold mb-4">{title}</h2>
         {/* Entries */}
         {entries.map((entry, index) => (
-          <div key={index} className="bg-white rounded-lg shadow-md p-2 mb-2">
-            {/* Entry content */}
-            <p>{entry}</p>
-          </div>
+            <Groups key={index} groupName={entry}/>
         ))}
       </div>
     </div>
   );
 };
 
-export default Column;
+export default ClassColumn;
