@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import AdminHeader from "./Adminheader"
 import ClassColumn from "./ClassColumn";
-import StudentScoresChart from "@/app/admin/components/StudentScoresChart";
 import studentScoresData from '@/app/studentScores.json';
 import StudentChartWrapper from "@/app/admin/components/StudentChartWrapper";
 
