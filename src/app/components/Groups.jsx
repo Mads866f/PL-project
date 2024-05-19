@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from 'next/link';
 
-const Groups = ({ groupName, subItems }) => {
+const Groups = ({ groupName, subItems, onStudentChange }) => {
     const [showMembers, setShowMembers] = useState(false);
 
     const toggleShowMembers = () => {
@@ -16,7 +16,12 @@ const Groups = ({ groupName, subItems }) => {
                 <ul className="mt-2">
                     {subItems.map((item, index) => (
                         <li key={index} className="mb-1">
-                            <a className="text-blue-500 hover:underline">{item}</a>
+                            <a
+                                className="text-blue-500 hover:underline"
+                                onClick={() => onStudentChange(item)}
+                            >
+                                {item}
+                            </a>
                         </li>
                     ))}
                 </ul>
