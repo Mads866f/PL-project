@@ -13,6 +13,13 @@ const LineGraph = ({ data }) => {
                 fill: false,
                 borderColor: 'rgb(75, 192, 192)',
                 tension: 0.1
+            },
+            {
+                label: 'Line Graph2',
+                data: data.map(point => 10),
+                fill: false,
+                borderColor: 'rgb(75, 192, 192)',
+                tension: 0.1
             }
         ]
     };

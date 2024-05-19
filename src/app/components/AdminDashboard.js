@@ -1,29 +1,30 @@
+"use client";
 import React from "react";
 import AdminHeader from "./Adminheader"
 import ClassColumn from "./ClassColumn";
 import LineGraph from "@/app/admin/components/LineGraph";
+import StudentScoresChart from "@/app/admin/components/StudentScoresChart";
 
 const AdminDashboard = () => {
-    const data = [
-        { x: 0, y: 10 },
-        { x: 1, y: 20 },
-        { x: 2, y: 15 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        { x: 3, y: 25 },
-        // Add more data points as needed
+
+    const elev6_data = [
+        [50, 100, 50, 100, 50, 50, 100, 100, 100, 50, 50, 50],
+        [100, 50, 100, 100, 100, 50, 100, 100, 100, 50, 50, 100],
+        [100, 100, 50, 100, 100, 50, 100, 100, 100, 50, 50, 100],
+        [100, 100, 50, 100, 100, 100, 100, 100, 100, 50, 50, 100]
     ];
 
-  return (
+    const elev10_data = [
+        [0, 50, 50, 0, 50, 100, 100, 50, 100, 50, 100, 50],
+        [0, 50, 50, 50, 100, 100, 100, 50, 100, 50, 100, 50],
+        [0, 50, 50, 50, 100, 100, 100, 100, 100, 50, 100, 50],
+        [0, 50, 50, 100, 100, 100, 100, 50, 100, 20, 100, 50]
+    ];
+
+    const dates = ['06.05', '08.05', '13.05', '16.05'];
+
+
+    return (
       <div className="max-h-screen max-w-screen">
         <div className="">
             <AdminHeader/>
@@ -35,7 +36,7 @@ const AdminDashboard = () => {
               <div className="w-4/6">
                   <div className="flex flex-col border-4">
                       <div className="bg-white border">
-                          <LineGraph data={data}/>
+                          <StudentScoresChart data={elev6_data} title="Student 6 Scores" dates={dates} />
                       </div>
                       <div className="bg-gray-100 border-t border-gray-300">
                           <div className="h-full bg-yellow-100">
