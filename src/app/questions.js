@@ -46,5 +46,9 @@ export const questions = [
     {
         number: 12,
         question: " Har du ondt i maven når du skal i skole?",
+    },
+    {
+        number: 13,
+        question: "slut",
     }
 ];

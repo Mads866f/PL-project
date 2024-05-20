@@ -4,7 +4,7 @@ import Groups from './Groups';
 const ClassColumn = ({ selectedStudent, handleStudentChange }) => {
   const title = "Klasser";
     const entries = [
-        { name: "Demo-klasse", subItems: ["Sub-item 1", "Sub-item 2", "Sub-item 3"] },
+        { name: "Demo-klasse", subItems: ["demo"] },
         {
             "name": "Test-klasse",
             "subItems": [
