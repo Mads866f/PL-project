@@ -19,25 +19,25 @@ const StudentScoresChart = ({ data, title, dates }) => {
         labels: dates,
         datasets: [
             {
-                label: 'Education',
+                label: 'Undervisning',
                 data: scores.map(score => score.education),
                 borderColor: 'rgba(75, 192, 192, 1)',
                 fill: false,
             },
             {
-                label: 'Pauses',
+                label: 'Pauser',
                 data: scores.map(score => score.pauses),
                 borderColor: 'rgba(153, 102, 255, 1)',
                 fill: false,
             },
             {
-                label: 'Home',
+                label: 'Hjemme',
                 data: scores.map(score => score.home),
                 borderColor: 'rgba(255, 159, 64, 1)',
                 fill: false,
             },
             {
-                label: 'Overall',
+                label: 'Generelt',
                 data: scores.map(score => score.overall),
                 borderColor: 'rgba(255, 99, 132, 1)',
                 fill: false,

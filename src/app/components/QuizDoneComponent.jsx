@@ -16,7 +16,7 @@ const QuizDoneComponent = () => {
                     <div className="text-center">
                         <Link href="/">
                             <div className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg inline-block">
-                                tilbage til Startside
+                                Tilbage til Startside
                             </div>
                         </Link>
                     </div>
